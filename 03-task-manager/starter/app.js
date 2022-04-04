@@ -8,11 +8,11 @@ require("dotenv").config();
 app.use(express.static("./public"));
 app.use(express.json());
 
-//routes
-app.get("/hello", (req, res) => {
-  res.status(200).send("App is running...");
-});
+// app.get("/hello", (req, res) => {
+//   res.status(200).send("App is running...");
+// });
 
+//routes
 app.use("/api/v1/tasks", tasks);
 
 const port = 3000;
