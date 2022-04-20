@@ -24,7 +24,7 @@ app.use("/api/v1/products", productsRouter);
 app.use(notFound);
 app.use(errorHandler);
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 
 const start = async () => {
   try {
